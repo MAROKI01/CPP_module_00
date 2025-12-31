@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iterator>
+#include <cctype>
 
 int main(int ac, char **av)
 {
@@ -9,13 +9,14 @@ int main(int ac, char **av)
         return (0);
     }
     int i;
+    unsigned char c;
     for (i = 1 ; i < ac; i++)
     {
         for (int j = 0; av[i][j]; j++)
-            if (av[i][j] >= 'a' && av[i][j] <= 'z')
-                std::cout << (char)std::toupper(av[i][j]);
-            else
-                std::cout << av[i][j];
+        {
+            c = (unsigned char)av[i][j];
+            std::cout << (char)std::toupper(c);
+        }
     }
     std::cout << std::endl;
     return (0);

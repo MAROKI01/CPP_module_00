@@ -21,5 +21,5 @@ public:
 };
 
 std::string getLine(std::string prompt);
-
+int isNumber(std::string phoneNumber);
 #endif

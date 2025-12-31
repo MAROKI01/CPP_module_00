@@ -4,6 +4,10 @@ Contact::Contact()
 {
 }
 
+Contact::~Contact()
+{
+}
+
 Contact::Contact(
     std::string firstName,
     std::string lastName,
@@ -60,6 +64,3 @@ void Contact::showInformation()
     std::cout << "  Darkest Secret: " <<  this->darkestSecret << std::endl;
 }
 
-Contact::~Contact()
-{
-}

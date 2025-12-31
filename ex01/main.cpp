@@ -7,7 +7,7 @@ int main(void)
     std::string input;
 
     std::cout << "Welcome to the phonebook type\n  ADD | SEARCH | EXIT " << std::endl;
-    
+
     while(true)
     {
         input = getLine(">> ");
